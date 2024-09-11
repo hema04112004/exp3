@@ -1,0 +1,103 @@
+/* src/Calculator.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .calculator {
+    width: 280px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display {
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .result {
+    font-size: 28px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover Effect - Button */
+  button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    transform: scale(1.05); /* Slight scale up */
+  }
+  
+  /* Active (Pressed) Effect - Button */
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: none; /* Remove shadow on press */
+    transform: scale(0.98); /* Slight scale down for press effect */
+  }
+  
+  /* Special Styling for Clear Button */
+  .clear {
+    background-color: #ff4c4c;
+  }
+  
+  .clear:hover {
+    background-color: #e83e3e;
+  }
+  
+  .clear:active {
+    background-color: #c43a3a;
+  }
+  
